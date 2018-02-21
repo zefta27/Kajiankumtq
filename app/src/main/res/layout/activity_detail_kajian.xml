@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mtqnunsri.gelumbang.zefta.uwalq.kajianku.Activity.BottomMenu">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:layout_editor_absoluteY="25dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags ="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_buat_kajian"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Kajian"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:id="@+id/dtlJudulKajian"
+            />
+        <TextView
+            android:layout_below="@+id/dtlJudulKajian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Judul Kajian"
+            android:id="@+id/tvJudulKajian"
+            />
+        <TextView android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvJudulKajian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pengisi"
+            android:textStyle="bold"
+            android:id="@+id/dtlPengisi"
+            />
+        <TextView
+            android:layout_below="@+id/dtlPengisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Pengisi (Ustadz/ Ustadzah)"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tvPengisi"
+            />
+
+        <TextView
+            android:layout_below="@+id/tvPengisi"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Kajian"
+            android:textStyle="bold"
+            android:id="@+id/dtlTanggal"
+            />
+        <TextView
+            android:layout_below="@+id/dtlTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Tanggal Kajian"
+            android:id="@+id/tvTanggal"
+            />
+        <TextView
+            android:layout_below="@+id/tvTanggal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waktu Kajian"
+            android:textStyle="bold"
+            android:id="@+id/dtlWaktu"
+            />
+        <TextView
+            android:layout_below="@+id/dtlWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waktu Kajian"
+            android:id="@+id/tvWaktu"
+            />
+        <TextView
+            android:layout_below="@+id/tvWaktu"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tempat"
+            android:textStyle="bold"
+            android:id="@+id/dtlTempat"
+            />
+        <TextView
+            android:layout_below="@+id/dtlTempat"
+            android:layout_width="match_parent"
+            android:text="text Tempat"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTempat"/>
+        <TextView
+            android:layout_below="@+id/tvTempat"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textStyle="bold"
+            android:id="@+id/dtlAlamat"
+            />
+        <TextView
+            android:layout_below="@+id/dtlAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text Alamat"
+            android:id="@+id/tvAlamat"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvlongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom">
+
+    <Button
+    android:id="@+id/btnMapDetailLocation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Lihat Lokasi di Peta"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/textColorPrimary">
+    </Button>
+        <Button android:layout_below="@+id/btnMapDetailLocation"
+        android:id="@+id/btnSavekajian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan Kajian"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/textColorPrimary">
+    </Button>
+
+    </RelativeLayout>
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginBottom="16dp" />-->
+
+
+</RelativeLayout>
